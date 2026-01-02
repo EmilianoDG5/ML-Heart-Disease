@@ -1,0 +1,21 @@
+# Word temporary files
+~$*.doc*
+~$*.dot*
+~$*.docx*
+~$*.dotx*
+~$*.docm*
+~$*.dotm*
+~$*.rtf
+
+# Lock files (Office 2016+)
+*.tmp
+
+# AutoRecovery files
+*.asd
+
+# Backup files
+*.wbk
+*.bak
+
+# Office temporary files
+~$*
