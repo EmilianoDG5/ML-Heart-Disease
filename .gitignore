@@ -9,6 +9,8 @@
 
 # Lock files (Office 2016+)
 *.tmp
+~*.tmp
+
 
 # AutoRecovery files
 *.asd
