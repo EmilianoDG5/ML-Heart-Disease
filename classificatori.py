@@ -138,7 +138,7 @@ def compute_shap_importance(model, X):
 
     shap_values = np.array(shap_values)
 
-    # 🔥 FIX DEFINITIVO DELLE DIMENSIONI
+  
     if shap_values.ndim == 3:
         # (n_samples, n_features, n_classes) -> prendiamo classe positiva
         shap_values = shap_values[:, :, 0]
@@ -146,7 +146,7 @@ def compute_shap_importance(model, X):
     if shap_values.shape[0] != X.shape[0]:
         shap_values = shap_values.T
 
-    # Ora è SICURAMENTE (n_samples, n_features)
+   
     importance = np.mean(np.abs(shap_values), axis=0)
 
     return importance

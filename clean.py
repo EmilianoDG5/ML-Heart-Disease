@@ -1,7 +1,6 @@
 import pandas as pd
 import numpy as np
 
-# Caricamento dataset
 df = pd.read_csv("heart.csv")
 #rimozione duplicati
 duplicates = df[df.duplicated(keep=False)]
